@@ -1,0 +1,495 @@
+/* ============================
+   🔁 Global Reset & Base Setup
+=============================== */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%; /* 16px base */
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape */
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Segoe UI", Roboto, system-ui, sans-serif;
+  line-height: 1.6;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ============================
+   🌗 Dark Mode Support (CSS Only)
+=============================== */
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #111111;
+  --accent-color: #007bff;
+}
+
+[data-theme="dark"] {
+  --bg-color: #121212;
+  --text-color: #e0e0e0;
+  --accent-color: #66b2ff;
+}
+
+/* ============================
+   🧱 Structural Elements
+=============================== */
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  background: none;
+  border: none;
+  outline: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  overflow-wrap: break-word;
+}
+
+/* Older HTML5 elements block-fix for old browsers */
+article,
+aside,
+footer,
+header,
+main,
+nav,
+section {
+  display: block;
+}
+
+
+/* Layout */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+
+
+/* Responsive Utilities */
+@media (max-width: 768px) {
+  .text-2xl {
+    font-size: 1.25rem;
+  }
+  .text-xl {
+    font-size: 1.125rem;
+  }
+}
+
+/* ============================
+   ✨ Smooth Animation Helpers
+=============================== */
+
+.transition {
+  transition: all 0.3s ease-in-out;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* ============================
+   ✅ Accessibility Enhancements
+=============================== */
+
+:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  border: 0;
+}
+
+
+/* ============================custom css=============================== */
+div.outer-container {
+  background-image: url(../assets/Homepage_Background_Forrester_Desktop_Blank.webp);
+  background-size: cover ;
+  background-position:center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+nav {
+  display: flex;
+  position: static;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 25px;
+  height: 60px;
+  color: #ffffff;
+  transition: background-color 0.3s;  
+  background-color: transparent;
+
+}
+
+nav.scrolled {
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding:0 25px;
+  height: 60px;
+}
+
+div.scrolled{
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+nav div.logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav div.logo a img {
+  width: 120px;
+  height: auto;
+}
+
+nav div.logo a img:hover {
+ filter: brightness(2) blur(0) drop-shadow(0 0 20px rgb(34, 135, 252));
+}
+
+div.nav-items-container ul {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  padding-top: 5px;
+}
+
+div.nav-items-container ul li {
+  align-items: baseline;
+  list-style: none;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 500;
+  padding: 5px;
+  font-family: "Graphik LC Web", sans-serif;
+  text-transform: uppercase;
+  background-color: transparent;
+  cursor: pointer;
+}
+div.nav-items-container ul li:hover {
+  text-decoration: underline;
+  font-weight: 650;
+  text-decoration-color: rgb(0, 110, 255);
+  text-decoration-thickness: 2px; 
+  text-underline-offset: 2px;  
+}
+
+
+div.search-box-container {
+  display: flex;
+ 
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+}
+
+
+div.language-selector {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Default stroke */
+nav svg path {
+  stroke: white;
+  transition: stroke 0.3s ease;
+}
+
+/* On scroll */
+nav.scrolled svg path {
+  stroke: black;
+}
+
+/* On hover */
+nav svg:hover path {
+  stroke: blue;
+}
+
+/* div.search-box-container .search-icon:hover svg path{
+  stroke: #007bff;
+}
+div.language-selector:hover svg path{
+  stroke:#007bff;
+} */
+
+
+div.language-selector span{
+  font-size: 13px;
+}
+
+.demo-btn {
+  align-items: center;
+  background-color: #8be000;
+  border-color: #8be000;
+  border-radius: 25px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: #2e28360d 0px 1px 2px 0px;
+  color: #010203;
+  display: flex;
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  gap: 4px;
+  justify-content: center;
+  line-height: 12px;
+  padding: 4px 16px;
+  text-align: center;
+}
+
+
+.demo-btn:hover{
+  background-color: #010203;
+  color:  #8be000;
+  font-weight: 600;
+}
+
+
+
+/*main style*/
+
+
+section.banner{
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  width:100%;
+  margin-top: 10vh;
+  gap: 20px;
+}
+
+main section.main-section-left h1{
+  font-family: sans-serif;
+  font-size: 45px;
+  line-height: 59.4px;
+  font-weight: 600;
+  text-transform: uppercase;
+  max-width: 100%;
+  letter-spacing: -2px;
+}
+
+main section.main-section-left p{
+  font-size: 18px;
+  line-height: 30px;
+  color:#f3f4f6;
+}
+
+main section.main-section-left{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 25px;
+  flex: 1;
+}
+
+main section.main-section-right{
+  flex: 1;
+  position: relative;
+}
+main section.main-section-right img{
+  position: relative;
+  width:100%;
+  top: 70px;
+
+}
+
+main section.main-section-left ul{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+main section.main-section-left ul li{
+  margin-left: -10px;
+}
+
+
+main section.main-section-left ul li::before {
+  background-image: url(../assets/icons/bullet\ point.svg);
+  content:"\2003";
+  padding-right: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 10px;
+  height: 10px;
+}
+
+main section.main-section-left div.btn-container{
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+main section.main-section-left div.btn-container button:first-child{
+ background-color: rgb(35, 129, 236);
+ border-color: #07f;
+ border-radius: 25px;
+ border-style: solid;
+ box-shadow: #0321270d 0px 1px 2px 0px;
+ color: #fff;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-weight: 500;
+ line-height: 16px;
+ padding: 14px 32px;
+ text-align: center;
+}
+
+main section.main-section-left div.btn-container button:first-child:hover{
+  background-color: #0066ff;
+}
+
+
+main section.main-section-left div.btn-container button+button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  padding: 14px 32px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+
+  box-shadow: 0px 1px 2px 0px #0321270d;
+
+  color: #fff;
+  font-family: "Graphik LC Web", sans-serif;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: center;
+}
+
+main section.main-section-left div.btn-container button+button:hover{
+  
+  border: 2px solid #036af0;
+  color: #036af0;
+  
+  
+}
+
+
+div.w-get-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: white;
+  width: 80%;
+  margin: 100px auto;
+  height: 294px;
+  gap:30px;
+}
+div.w-get{
+  border: 1px solid #dcdcdc;
+  flex: 1;
+  margin: 20px;
+}
+
+div.w-get .w-get-header img{
+  width: 100px;
+  height: 50px;
+}
+div.w-get .w-get-header:last-of-type img{
+  height: 30px;
+}
+
+
+
+
+
+
+
+@media (max-height: 615px) {
+  div.outer-container {
+    background-image: url(../assets/Homepage_Background_Forrester_Desktop_Blank.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 150vh;
+  }
+
+}
