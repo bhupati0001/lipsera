@@ -283,7 +283,7 @@ nav.scrolled svg path {
 
 /* On hover */
 nav svg:hover path {
-  stroke: blue;
+  stroke: rgb(4, 129, 245);
 }
 
 /* div.search-box-container .search-icon:hover svg path{
@@ -447,9 +447,7 @@ main section.main-section-left div.btn-container button+button{
 main section.main-section-left div.btn-container button+button:hover{
   
   border: 2px solid #036af0;
-  color: #036af0;
-  
-  
+  color: #036af0; 
 }
 
 
@@ -457,16 +455,45 @@ div.w-get-container{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  background-color: white;
-  width: 80%;
+  background-color: transparent;
   margin: 100px auto;
+  padding: 20px;
   height: 294px;
-  gap:30px;
+}
+div.w-get-container .w-get{
+  background-color: #ffffff;
+}
+div.w-get-container .w-get:hover{
+  background-color: #8be000;
+  box-shadow: 0px 1px 2px 0px #0321270d;
+}
+
+div.w-get-container .w-get:hover .w-get-header{
+  border-bottom: 4px solid #010203;
 }
 div.w-get{
-  border: 1px solid #dcdcdc;
+  border: 1px solid #010203;
+  border-radius: 4px;
+  color: #010203;
   flex: 1;
   margin: 20px;
+  padding: 10px;
+  height: 220px;
+  width: 370px;
+  position: relative;
+}
+
+div.w-get-header{
+  background-color: transparent;
+  width: fit-content;
+  margin: 20px;
+  padding-bottom: 5px;
+  border-bottom: 4px solid var(--highlight-cyber-green,#8be000);
+}
+
+p.w-get-body{
+  margin: 20px;
+  padding-right: 10px;
 }
 
 div.w-get .w-get-header img{
@@ -477,11 +504,101 @@ div.w-get .w-get-header:last-of-type img{
   height: 30px;
 }
 
+svg.external-link{
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+ 
+}
+
+
+section.w-get-container{
+  display: block;
+  position: relative;
+  top: 150px;
+  height: 294px;
+  background-color:transparent
+
+}
+
+section.w-get-container svg.top-left{
+  display: block;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+}
+section.w-get-container svg.top-right{
+  display: block;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: rotate(90deg);
+}
+section.w-get-container svg.bottom-left{
+  display: block;
+  background-color: transparent;
+  position: absolute;
+  bottom: 0;
+  transform: rotate(270deg);
+}
+section.w-get-container svg.bottom-right{
+  display: block;
+  background-color: transparent;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: rotate(180deg);
+}
+
+section.features-container{
+  display: relative;
+  margin-top: 300px;
+}
+
+div.features-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div.feature-container{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+div.first-row-feature{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+div.second-row-feature{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 0 110px;
+}
+
+div.feature{
+  border: 2px solid black;
+  margin: 10px auto;
+  width: 220px;
+  height: 178px;
+}
 
 
 
 
 
+
+
+
+
+
+
+/*responsive design*/
 
 @media (max-height: 615px) {
   div.outer-container {
