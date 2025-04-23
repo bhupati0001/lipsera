@@ -106,7 +106,6 @@ section {
   display: block;
 }
 
-
 /* Layout */
 .container {
   width: 100%;
@@ -114,8 +113,6 @@ section {
   margin-inline: auto;
   padding-inline: 1rem;
 }
-
-
 
 /* Responsive Utilities */
 @media (max-width: 768px) {
@@ -165,12 +162,11 @@ section {
   border: 0;
 }
 
-
 /* ============================custom css=============================== */
 div.outer-container {
   background-image: url(../assets/Homepage_Background_Forrester_Desktop_Blank.webp);
-  background-size: cover ;
-  background-position:center;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
 }
@@ -183,9 +179,8 @@ nav {
   padding-top: 25px;
   height: 60px;
   color: #ffffff;
-  transition: background-color 0.3s;  
+  transition: background-color 0.3s;
   background-color: transparent;
-
 }
 
 nav.scrolled {
@@ -195,11 +190,11 @@ nav.scrolled {
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  padding:0 25px;
+  padding: 0 25px;
   height: 60px;
 }
 
-div.scrolled{
+div.scrolled {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: fixed;
   top: 0;
@@ -209,7 +204,7 @@ div.scrolled{
   background-color: #ffffff;
 }
 
-nav div.logo{
+nav div.logo {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -221,7 +216,7 @@ nav div.logo a img {
 }
 
 nav div.logo a img:hover {
- filter: brightness(2) blur(0) drop-shadow(0 0 20px rgb(34, 135, 252));
+  filter: brightness(2) blur(0) drop-shadow(0 0 20px rgb(34, 135, 252));
 }
 
 div.nav-items-container ul {
@@ -247,19 +242,17 @@ div.nav-items-container ul li:hover {
   text-decoration: underline;
   font-weight: 650;
   text-decoration-color: rgb(0, 110, 255);
-  text-decoration-thickness: 2px; 
-  text-underline-offset: 2px;  
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
 }
-
 
 div.search-box-container {
   display: flex;
- 
+
   align-items: center;
   gap: 15px;
   cursor: pointer;
 }
-
 
 div.language-selector {
   display: flex;
@@ -293,8 +286,7 @@ div.language-selector:hover svg path{
   stroke:#007bff;
 } */
 
-
-div.language-selector span{
+div.language-selector span {
   font-size: 13px;
 }
 
@@ -318,28 +310,24 @@ div.language-selector span{
   text-align: center;
 }
 
-
-.demo-btn:hover{
+.demo-btn:hover {
   background-color: #010203;
-  color:  #8be000;
+  color: #8be000;
   font-weight: 600;
 }
 
-
-
 /*main style*/
 
-
-section.banner{
+section.banner {
   display: flex;
   align-items: center;
   color: #ffffff;
-  width:100%;
+  width: 100%;
   margin-top: 10vh;
   gap: 20px;
 }
 
-main section.main-section-left h1{
+main section.main-section-left h1 {
   font-family: sans-serif;
   font-size: 45px;
   line-height: 59.4px;
@@ -349,13 +337,13 @@ main section.main-section-left h1{
   letter-spacing: -2px;
 }
 
-main section.main-section-left p{
+main section.main-section-left p {
   font-size: 18px;
   line-height: 30px;
-  color:#f3f4f6;
+  color: #f3f4f6;
 }
 
-main section.main-section-left{
+main section.main-section-left {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -363,18 +351,17 @@ main section.main-section-left{
   flex: 1;
 }
 
-main section.main-section-right{
+main section.main-section-right {
   flex: 1;
   position: relative;
 }
-main section.main-section-right img{
+main section.main-section-right img {
   position: relative;
-  width:100%;
+  width: 100%;
   top: 70px;
-
 }
 
-main section.main-section-left ul{
+main section.main-section-left ul {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -382,14 +369,13 @@ main section.main-section-left ul{
   margin-top: 20px;
 }
 
-main section.main-section-left ul li{
+main section.main-section-left ul li {
   margin-left: -10px;
 }
 
-
 main section.main-section-left ul li::before {
   background-image: url(../assets/icons/bullet\ point.svg);
-  content:"\2003";
+  content: "\2003";
   padding-right: 20px;
   background-repeat: no-repeat;
   background-position: center;
@@ -397,35 +383,34 @@ main section.main-section-left ul li::before {
   height: 10px;
 }
 
-main section.main-section-left div.btn-container{
+main section.main-section-left div.btn-container {
   display: flex;
   flex-direction: row;
   gap: 25px;
   margin-top: 20px;
 }
 
-main section.main-section-left div.btn-container button:first-child{
- background-color: rgb(35, 129, 236);
- border-color: #07f;
- border-radius: 25px;
- border-style: solid;
- box-shadow: #0321270d 0px 1px 2px 0px;
- color: #fff;
- display: flex;
- align-items: center;
- justify-content: center;
- font-weight: 500;
- line-height: 16px;
- padding: 14px 32px;
- text-align: center;
+main section.main-section-left div.btn-container button:first-child {
+  background-color: rgb(35, 129, 236);
+  border-color: #07f;
+  border-radius: 25px;
+  border-style: solid;
+  box-shadow: #0321270d 0px 1px 2px 0px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  line-height: 16px;
+  padding: 14px 32px;
+  text-align: center;
 }
 
-main section.main-section-left div.btn-container button:first-child:hover{
+main section.main-section-left div.btn-container button:first-child:hover {
   background-color: #0066ff;
 }
 
-
-main section.main-section-left div.btn-container button+button{
+main section.main-section-left div.btn-container button + button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -444,14 +429,12 @@ main section.main-section-left div.btn-container button+button{
   text-align: center;
 }
 
-main section.main-section-left div.btn-container button+button:hover{
-  
+main section.main-section-left div.btn-container button + button:hover {
   border: 2px solid #036af0;
-  color: #036af0; 
+  color: #036af0;
 }
 
-
-div.w-get-container{
+div.w-get-container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -460,18 +443,18 @@ div.w-get-container{
   padding: 20px;
   height: 294px;
 }
-div.w-get-container .w-get{
+div.w-get-container .w-get {
   background-color: #ffffff;
 }
-div.w-get-container .w-get:hover{
+div.w-get-container .w-get:hover {
   background-color: #8be000;
   box-shadow: 0px 1px 2px 0px #0321270d;
 }
 
-div.w-get-container .w-get:hover .w-get-header{
+div.w-get-container .w-get:hover .w-get-header {
   border-bottom: 4px solid #010203;
 }
-div.w-get{
+div.w-get {
   border: 1px solid #010203;
   border-radius: 4px;
   color: #010203;
@@ -483,51 +466,48 @@ div.w-get{
   position: relative;
 }
 
-div.w-get-header{
+div.w-get-header {
   background-color: transparent;
   width: fit-content;
   margin: 20px;
   padding-bottom: 5px;
-  border-bottom: 4px solid var(--highlight-cyber-green,#8be000);
+  border-bottom: 4px solid var(--highlight-cyber-green, #8be000);
 }
 
-p.w-get-body{
+p.w-get-body {
   margin: 20px;
   padding-right: 10px;
 }
 
-div.w-get .w-get-header img{
+div.w-get .w-get-header img {
   width: 100px;
   height: 50px;
 }
-div.w-get .w-get-header:last-of-type img{
+div.w-get .w-get-header:last-of-type img {
   height: 30px;
 }
 
-svg.external-link{
+svg.external-link {
   position: absolute;
   right: 20px;
   bottom: 20px;
- 
 }
 
-
-section.w-get-container{
+section.w-get-container {
   display: block;
   position: relative;
   top: 150px;
-  height: 294px;
-  background-color:transparent
-
+  height: 300px;
+  background-color: transparent;
 }
 
-section.w-get-container svg.top-left{
+section.w-get-container svg.top-left {
   display: block;
   background-color: transparent;
   position: absolute;
   top: 0;
 }
-section.w-get-container svg.top-right{
+section.w-get-container svg.top-right {
   display: block;
   background-color: transparent;
   position: absolute;
@@ -535,14 +515,14 @@ section.w-get-container svg.top-right{
   right: 0;
   transform: rotate(90deg);
 }
-section.w-get-container svg.bottom-left{
+section.w-get-container svg.bottom-left {
   display: block;
   background-color: transparent;
   position: absolute;
   bottom: 0;
   transform: rotate(270deg);
 }
-section.w-get-container svg.bottom-right{
+section.w-get-container svg.bottom-right {
   display: block;
   background-color: transparent;
   position: absolute;
@@ -551,52 +531,111 @@ section.w-get-container svg.bottom-right{
   transform: rotate(180deg);
 }
 
-section.features-container{
+section.features-container {
   display: relative;
   margin-top: 300px;
 }
 
-div.features-container{
+div.features-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 40px;
 }
 
-div.feature-container{
+div.feature-container {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-div.first-row-feature{
+div.first-row-feature {
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  justify-content: space-between;
+  gap: 25px;
 }
 
-div.second-row-feature{
+div.second-row-feature {
   display: flex;
   flex-direction: row;
-  gap: 20px;
-  padding: 0 110px;
+  justify-content: space-between;
+  gap: 25px;
+  padding: 0 145px;
 }
 
-div.feature{
-  border: 2px solid black;
+div.feature {
+  position: relative;
+  border: 1px solid rgb(170, 170, 170);
+  border-radius: 4px;
   margin: 10px auto;
-  width: 220px;
+  width: 268px;
   height: 178px;
+  background-color: #f7f7f7;
 }
 
+div.feature:hover {
+  background-color: #8be000;
+}
 
+div.feature-header-container h1 {
+  color: #010203;
+  font-family: "Graphik Cond", sans-serif;
+  font-size: 44px;
+  letter-spacing: -3px;
+  font-weight: 600;
+  line-height: 52.8px;
+  text-align: center;
+}
+div.feature-header-container p {
+  color: #606264;
+  font-family: "Graphik LC Web", sans-serif;
+  font-size: 18px;
+  padding: 10px 50px;
+  margin: 0 150px;
+  line-height: 30px;
+  text-align: center;
+}
 
+div.feature img {
+  display: block;
+  margin: 40px auto 10px auto;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
 
+div.feature p {
+  text-align: center;
+  font-family: "Graphik LC Web", sans-serif;
+  font-size: 18px;
+  line-height: 25px;
+  color: black;
+  margin: 0 50px;
+  font-weight: 600;
+}
 
+div.feature svg {
+  display: block;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
 
+div.feature:hover svg path {
+  fill: rgb(56, 56, 56);
+}
 
+div.solutions-outer-container {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../assets/Homepage\ BG_Benefits.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 110vh;
 
-
-
+}
 
 /*responsive design*/
 
@@ -608,5 +647,4 @@ div.feature{
     background-repeat: no-repeat;
     height: 150vh;
   }
-
 }
