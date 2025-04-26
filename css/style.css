@@ -107,7 +107,7 @@ section {
 }
 
 /* Layout */
-.container {
+section {
   width: 100%;
   max-width: 1200px;
   margin-inline: auto;
@@ -163,13 +163,27 @@ section {
 }
 
 /* ============================custom css=============================== */
-div.outer-container {
+div.banner-section-wrapper {
   background-image: url(../assets/Homepage_Background_Forrester_Desktop_Blank.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 130vh;
+  width: 100vw;
 }
+
+header{
+  display: block;
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
+}
+div.nav-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 
 nav {
   display: flex;
@@ -181,6 +195,10 @@ nav {
   color: #ffffff;
   transition: background-color 0.3s;
   background-color: transparent;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 25px;
 }
 
 nav.scrolled {
@@ -323,8 +341,8 @@ section.banner {
   align-items: center;
   color: #ffffff;
   width: 100%;
-  margin-top: 10vh;
   gap: 20px;
+  padding-top: 100px;
 }
 
 main section.main-section-left h1 {
@@ -358,7 +376,7 @@ main section.main-section-right {
 main section.main-section-right img {
   position: relative;
   width: 100%;
-  top: 70px;
+  top: 50px;
 }
 
 main section.main-section-left ul {
@@ -439,7 +457,6 @@ div.w-get-container {
   flex-direction: row;
   justify-content: space-around;
   background-color: transparent;
-  margin: 100px auto;
   padding: 20px;
   height: 294px;
 }
@@ -496,7 +513,7 @@ svg.external-link {
 section.w-get-container {
   display: block;
   position: relative;
-  top: 150px;
+  top:-120px;
   height: 300px;
   background-color: transparent;
 }
@@ -532,8 +549,7 @@ section.w-get-container svg.bottom-right {
 }
 
 section.features-container {
-  display: relative;
-  margin-top: 300px;
+ 
 }
 
 div.features-container {
@@ -633,18 +649,52 @@ div.solutions-outer-container {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  margin-top: 110vh;
+  margin-top: 100px;
+  color: #f0eeee;
+  display: flex;
+  justify-content: center;
+  
+}
 
+section.solutions{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding-top: 100px;
+}
+
+div.solutions-header-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+  justify-content: ;
+  text-align: center;
+}
+
+
+div.solution-header-container h1 {
+  font-family: "Graphik Cond", sans-serif;
+  font-size: 44px;
+  letter-spacing: -3px;
+  font-weight: 500;
+  line-height: 52.8px;
+  text-align: center;
+}
+
+
+div.solution-header-container h2{
+  font-family: "Graphik LC Web", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #f0eeee;
+  margin: 0 150px;
 }
 
 /*responsive design*/
 
-@media (max-height: 615px) {
-  div.outer-container {
-    background-image: url(../assets/Homepage_Background_Forrester_Desktop_Blank.webp);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 150vh;
-  }
-}
+
